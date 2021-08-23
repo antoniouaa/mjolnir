@@ -4,10 +4,10 @@ on: push
 
 jobs:
   format-check:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout repo
-      uses: actions/checkout@v2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
 
-    - name: Run Black
-      uses: psf/black@stable
+      - name: Run Black
+        uses: psf/black@stable
