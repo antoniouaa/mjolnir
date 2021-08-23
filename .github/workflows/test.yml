@@ -1,0 +1,28 @@
+name: Tests
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Install python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+
+      - name: Install Poetry Action
+        uses: snok/install-poetry@v1.1.6
+
+      - name: Install dependencies
+        run: |
+          poetry install
+          poetry -V
+          poetry run pytest -V
+
+      - name: Run the tests
+        run: |
+          poetry run task test
