@@ -25,4 +25,4 @@ jobs:
 
       - name: Run the tests
         run: |
-          poetry run task test
+          poetry run pytest
