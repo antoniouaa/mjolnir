@@ -4,7 +4,7 @@
 
 The formula used is derived from Bayes' theorem:
 
-![Full equation](assets/fullEq.svg)
+![Full equation](assets/fullEq.png)
 
 Where:
 
@@ -16,11 +16,11 @@ Where:
 
 By assuming that the probabilities of a message being spam or ham are equal, we simplify the equation further
 
-![Assumptions](assets/assumptions.svg)
+![Assumptions](assets/assumptions.png)
 
 yields,
 
-![Reduced Equation](assets/reducedEq.svg)
+![Reduced Equation](assets/reducedEq.png)
 
 This is the exact equation used in the code to calculate the probability a word is spam or ham.
 
