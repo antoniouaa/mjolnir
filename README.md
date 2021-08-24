@@ -1,5 +1,18 @@
 # mjolnir
 
+## Usage
+
+```sh
+python -m mjolnir phrase_to_test_goes_here
+```
+
+Example:
+
+```
+➜ poetry run python -m mjolnir enter for a chance to win big time
+0.9981053489360789
+```
+
 ## Formula
 
 The formula used is derived from Bayes' theorem:
